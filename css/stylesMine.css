@@ -38,17 +38,19 @@
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center; /* Added this line */
   }
   
   .navbar-links li {
     margin-left: 10px;
+    flex: 1; /* Added this line */
   }
   
   .navbar-links a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; 
   }
-  
+
   .section {
     margin-bottom: 40px;
   }
@@ -71,6 +73,24 @@
   .project-description {
     margin-top: 5px;
   }
+
+  .navLogo{
+    width: 1.5em;
+    height: 1.5em;
+  }
+  #linkedin{
+    width: 4em;
+    height: 1em;
+    top: 0.15em;
+    position: relative;
+  }
+
+
+  
+
+
+
+
   
   @media (max-width: 600px) {
     .container {
