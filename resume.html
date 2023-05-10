@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/pdf2htmlEX/pdf2htmlEX) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<style type="text/css">
+/*! 
+ * Base CSS for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE
+ */#sidebar{position:absolute;top:0;left:0;bottom:0;width:250px;padding:0;margin:0;overflow:auto}#page-container{position:absolute;top:0;left:0;margin:0;padding:0;border:0}@media screen{#sidebar.opened+#page-container{left:250px}#page-container{bottom:0;right:0;overflow:auto}.loading-indicator{display:none}.loading-indicator.active{display:block;position:absolute;width:64px;height:64px;top:50%;left:50%;margin-top:-32px;margin-left:-32px}.loading-indicator img{position:absolute;top:0;left:0;bottom:0;right:0}}@media print{@page{margin:0}html{margin:0}body{margin:0;-webkit-print-color-adjust:exact}#sidebar{display:none}#page-container{width:auto;height:auto;overflow:visible;background-color:transparent}.d{display:none}}.pf{position:relative;background-color:white;overflow:hidden;margin:0;border:0}.pc{position:absolute;border:0;padding:0;margin:0;top:0;left:0;width:100%;height:100%;overflow:hidden;display:block;transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0}.pc.opened{display:block}.bf{position:absolute;border:0;margin:0;top:0;bottom:0;width:100%;height:100%;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}.bi{position:absolute;border:0;margin:0;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}@media print{.pf{margin:0;box-shadow:none;page-break-after:always;page-break-inside:avoid}@-moz-document url-prefix(){.pf{overflow:visible;border:1px solid #fff}.pc{overflow:visible}}}.c{position:absolute;border:0;padding:0;margin:0;overflow:hidden;display:block}.t{position:absolute;white-space:pre;font-size:1px;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%;unicode-bidi:bidi-override;-moz-font-feature-settings:"liga" 0}.t:after{content:''}.t:before{content:'';display:inline-block}.t span{position:relative;unicode-bidi:bidi-override}._{display:inline-block;color:transparent;z-index:-1}::selection{background:rgba(127,255,255,0.4)}::-moz-selection{background:rgba(127,255,255,0.4)}.pi{display:none}.d{position:absolute;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%}.it{border:0;background-color:rgba(255,255,255,0.0)}.ir:hover{cursor:pointer}</style>
+<style type="text/css">
+/*! 
+ * Fancy styles for pdf2htmlEX
+ * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> 
+ * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE
+ */@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes swing{0{transform:rotate(0)}10%{transform:rotate(0)}90%{transform:rotate(720deg)}100%{transform:rotate(720deg)}}@-webkit-keyframes swing{0{-webkit-transform:rotate(0)}10%{-webkit-transform:rotate(0)}90%{-webkit-transform:rotate(720deg)}100%{-webkit-transform:rotate(720deg)}}@media screen{#sidebar{background-color:#2f3236;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNCA0Wk00IDBMMCA0WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+")}#outline{font-family:Georgia,Times,"Times New Roman",serif;font-size:13px;margin:2em 1em}#outline ul{padding:0}#outline li{list-style-type:none;margin:1em 0}#outline li>ul{margin-left:1em}#outline a,#outline a:visited,#outline a:hover,#outline a:active{line-height:1.2;color:#e8e8e8;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;display:block;overflow:hidden;outline:0}#outline a:hover{color:#0cf}#page-container{background-color:#9e9e9e;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");-webkit-transition:left 500ms;transition:left 500ms}.pf{margin:13px auto;box-shadow:1px 1px 3px 1px #333;border-collapse:separate}.pc.opened{-webkit-animation:fadein 100ms;animation:fadein 100ms}.loading-indicator.active{-webkit-animation:swing 1.5s ease-in-out .01s infinite alternate none;animation:swing 1.5s ease-in-out .01s infinite alternate none}.checked{background:no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goQDSYgDiGofgAAAslJREFUOMvtlM9LFGEYx7/vvOPM6ywuuyPFihWFBUsdNnA6KLIh+QPx4KWExULdHQ/9A9EfUodYmATDYg/iRewQzklFWxcEBcGgEplDkDtI6sw4PzrIbrOuedBb9MALD7zv+3m+z4/3Bf7bZS2bzQIAcrmcMDExcTeXy10DAFVVAQDksgFUVZ1ljD3yfd+0LOuFpmnvVVW9GHhkZAQcxwkNDQ2FSCQyRMgJxnVdy7KstKZpn7nwha6urqqfTqfPBAJAuVymlNLXoigOhfd5nmeiKL5TVTV+lmIKwAOA7u5u6Lped2BsbOwjY6yf4zgQQkAIAcedaPR9H67r3uYBQFEUFItFtLe332lpaVkUBOHK3t5eRtf1DwAwODiIubk5DA8PM8bYW1EU+wEgCIJqsCAIQAiB7/u253k2BQDDMJBKpa4mEon5eDx+UxAESJL0uK2t7XosFlvSdf0QAEmlUnlRFJ9Waho2Qghc1/U9z3uWz+eX+Wr+lL6SZfleEAQIggA8z6OpqSknimIvYyybSCReMsZ6TislhCAIAti2Dc/zejVNWwCAavN8339j27YbTg0AGGM3WltbP4WhlRWq6Q/btrs1TVsYHx+vNgqKoqBUKn2NRqPFxsbGJzzP05puUlpt0ukyOI6z7zjOwNTU1OLo6CgmJyf/gA3DgKIoWF1d/cIY24/FYgOU0pp0z/Ityzo8Pj5OTk9PbwHA+vp6zWghDC+VSiuRSOQgGo32UErJ38CO42wdHR09LBQK3zKZDDY2NupmFmF4R0cHVlZWlmRZ/iVJUn9FeWWcCCE4ODjYtG27Z2Zm5juAOmgdGAB2d3cBADs7O8uSJN2SZfl+WKlpmpumaT6Yn58vn/fs6XmbhmHMNjc3tzDGFI7jYJrm5vb29sDa2trPC/9aiqJUy5pOp4f6+vqeJ5PJBAB0dnZe/t8NBajx/z37Df5OGX8d13xzAAAAAElFTkSuQmCC)}}</style>
+<style type="text/css">
+.ff0{font-family:sans-serif;visibility:hidden;}
+@font-face{font-family:ff1;src:url(f1.woff)format("woff");}.ff1{font-family:ff1;line-height:0.939453;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff2;src:url(f2.woff)format("woff");}.ff2{font-family:ff2;line-height:0.938477;font-style:normal;font-weight:normal;visibility:visible;}
+@font-face{font-family:ff3;src:url(f3.woff)format("woff");}.ff3{font-family:ff3;line-height:0.746094;font-style:normal;font-weight:normal;visibility:visible;}
+.m0{transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-ms-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-webkit-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);}
+.m1{transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-ms-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-webkit-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);}
+.v0{vertical-align:0.000000px;}
+.ls0{letter-spacing:0.000000px;}
+.sc_{text-shadow:none;}
+.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.sc_{-webkit-text-stroke:0px transparent;}
+.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}
+}
+.ws0{word-spacing:0.000000px;}
+._10{margin-left:-4.443099px;}
+._9{margin-left:-1.926211px;}
+._4{width:10.001954px;}
+._7{width:11.034444px;}
+._2{width:12.142972px;}
+._a{width:15.426584px;}
+._0{width:20.003904px;}
+._1{width:24.104854px;}
+._d{width:27.999999px;}
+._6{width:32.000001px;}
+._11{width:43.400138px;}
+._f{width:56.867194px;}
+._e{width:78.917975px;}
+._12{width:176.847660px;}
+._b{width:523.704262px;}
+._8{width:704.400758px;}
+._3{width:821.701016px;}
+._5{width:936.371727px;}
+._c{width:1286.034236px;}
+.fc0{color:rgb(0,0,0);}
+.fs3{font-size:36.000000px;}
+.fs4{font-size:39.999999px;}
+.fs1{font-size:44.000001px;}
+.fs2{font-size:55.999998px;}
+.fs0{font-size:72.000000px;}
+.y0{bottom:-0.750000px;}
+.y26{bottom:136.320370px;}
+.y25{bottom:156.156190px;}
+.y24{bottom:175.992010px;}
+.y23{bottom:195.827815px;}
+.y22{bottom:235.822265px;}
+.y21{bottom:271.780514px;}
+.y20{bottom:293.023315px;}
+.y1f{bottom:312.859135px;}
+.y1e{bottom:333.271544px;}
+.y1d{bottom:355.090949px;}
+.y1c{bottom:376.333735px;}
+.y1b{bottom:396.169555px;}
+.y1a{bottom:416.005375px;}
+.y19{bottom:436.417784px;}
+.y18{bottom:458.237189px;}
+.y17{bottom:499.638605px;}
+.y16{bottom:544.938175px;}
+.y15{bottom:564.773980px;}
+.y14{bottom:584.609800px;}
+.y13{bottom:604.445620px;}
+.y12{bottom:624.281425px;}
+.y11{bottom:644.693849px;}
+.y10{bottom:666.513239px;}
+.yf{bottom:707.591860px;}
+.ye{bottom:727.427680px;}
+.yd{bottom:747.263485px;}
+.yc{bottom:767.099305px;}
+.yb{bottom:786.935125px;}
+.ya{bottom:807.347534px;}
+.y9{bottom:829.166939px;}
+.y8{bottom:866.946170px;}
+.y7{bottom:905.028443px;}
+.y6{bottom:920.552123px;}
+.y5{bottom:939.557556px;}
+.y4{bottom:961.376954px;}
+.y3{bottom:1002.778380px;}
+.y2{bottom:1028.818725px;}
+.y1{bottom:1054.674316px;}
+.h5{height:26.244141px;}
+.h7{height:29.160156px;}
+.h6{height:29.218749px;}
+.h3{height:32.076173px;}
+.h8{height:32.140626px;}
+.h4{height:40.824217px;}
+.h2{height:52.488281px;}
+.h0{height:1188.000000px;}
+.h1{height:1188.750000px;}
+.w0{width:918.000000px;}
+.w1{width:918.750000px;}
+.x0{left:0.000000px;}
+.x3{left:108.000000px;}
+.x4{left:135.000000px;}
+.x5{left:162.000000px;}
+.x2{left:238.916064px;}
+.x1{left:345.700193px;}
+@media print{
+.v0{vertical-align:0.000000pt;}
+.ls0{letter-spacing:0.000000pt;}
+.ws0{word-spacing:0.000000pt;}
+._10{margin-left:-3.949422pt;}
+._9{margin-left:-1.712188pt;}
+._4{width:8.890626pt;}
+._7{width:9.808394pt;}
+._2{width:10.793752pt;}
+._a{width:13.712519pt;}
+._0{width:17.781248pt;}
+._1{width:21.426537pt;}
+._d{width:24.888888pt;}
+._6{width:28.444445pt;}
+._11{width:38.577900pt;}
+._f{width:50.548617pt;}
+._e{width:70.149311pt;}
+._12{width:157.197920pt;}
+._b{width:465.514900pt;}
+._8{width:626.134007pt;}
+._3{width:730.400904pt;}
+._5{width:832.330424pt;}
+._c{width:1143.141543pt;}
+.fs3{font-size:32.000000pt;}
+.fs4{font-size:35.555555pt;}
+.fs1{font-size:39.111112pt;}
+.fs2{font-size:49.777776pt;}
+.fs0{font-size:64.000000pt;}
+.y0{bottom:-0.666667pt;}
+.y26{bottom:121.173663pt;}
+.y25{bottom:138.805503pt;}
+.y24{bottom:156.437343pt;}
+.y23{bottom:174.069169pt;}
+.y22{bottom:209.619791pt;}
+.y21{bottom:241.582679pt;}
+.y20{bottom:260.465169pt;}
+.y1f{bottom:278.097009pt;}
+.y1e{bottom:296.241372pt;}
+.y1d{bottom:315.636399pt;}
+.y1c{bottom:334.518876pt;}
+.y1b{bottom:352.150716pt;}
+.y1a{bottom:369.782556pt;}
+.y19{bottom:387.926919pt;}
+.y18{bottom:407.321945pt;}
+.y17{bottom:444.123204pt;}
+.y16{bottom:484.389489pt;}
+.y15{bottom:502.021316pt;}
+.y14{bottom:519.653156pt;}
+.y13{bottom:537.284996pt;}
+.y12{bottom:554.916823pt;}
+.y11{bottom:573.061199pt;}
+.y10{bottom:592.456212pt;}
+.yf{bottom:628.970543pt;}
+.ye{bottom:646.602383pt;}
+.yd{bottom:664.234209pt;}
+.yc{bottom:681.866049pt;}
+.yb{bottom:699.497889pt;}
+.ya{bottom:717.642252pt;}
+.y9{bottom:737.037279pt;}
+.y8{bottom:770.618818pt;}
+.y7{bottom:804.469727pt;}
+.y6{bottom:818.268554pt;}
+.y5{bottom:835.162272pt;}
+.y4{bottom:854.557292pt;}
+.y3{bottom:891.358560pt;}
+.y2{bottom:914.505533pt;}
+.y1{bottom:937.488281pt;}
+.h5{height:23.328125pt;}
+.h7{height:25.920138pt;}
+.h6{height:25.972222pt;}
+.h3{height:28.512153pt;}
+.h8{height:28.569445pt;}
+.h4{height:36.288193pt;}
+.h2{height:46.656250pt;}
+.h0{height:1056.000000pt;}
+.h1{height:1056.666667pt;}
+.w0{width:816.000000pt;}
+.w1{width:816.666667pt;}
+.x0{left:0.000000pt;}
+.x3{left:96.000000pt;}
+.x4{left:120.000000pt;}
+.x5{left:144.000000pt;}
+.x2{left:212.369835pt;}
+.x1{left:307.289060pt;}
+}
+</style>
+<script src="compatibility.min.js"></script>
+<script src="pdf2htmlEX.min.js"></script>
+<script>
+try{
+pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
+}catch(e){}
+</script>
+<title></title>
+</head>
+<body>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/><div class="t m0 x1 h2 y1 ff1 fs0 fc0 sc0 ls0 ws0">Zachery<span class="_ _0"> </span>Prenovost</div><div class="t m0 x2 h3 y2 ff1 fs1 fc0 sc0 ls0 ws0">zprenovost@gmail.com<span class="_ _1"> </span>(206)<span class="_ _2"> </span>535-0447<span class="_ _1"> </span>Github:<span class="_ _2"> </span>Zachpren0</div><div class="t m0 x3 h4 y3 ff1 fs2 fc0 sc0 ls0 ws0">Education</div><div class="t m0 x3 h3 y4 ff2 fs1 fc0 sc0 ls0 ws0">University<span class="_ _2"> </span>of<span class="_ _2"> </span>British<span class="_ _2"> </span>Columbia<span class="_ _3"> </span><span class="ff1">Graduated<span class="_ _2"> </span>May<span class="_ _2"> </span>2023</span></div><div class="t m0 x3 h3 y5 ff1 fs1 fc0 sc0 ls0 ws0">Bachelor<span class="_ _2"> </span>of<span class="_ _2"> </span>Science<span class="_ _2"> </span>-<span class="_ _2"> </span>Computer<span class="_ _2"> </span>Science</div><div class="t m0 x3 h5 y6 ff1 fs3 fc0 sc0 ls0 ws0">Coursework:<span class="_ _4"> </span>object-oriented<span class="_ _4"> </span>programming,<span class="_ _4"> </span>algorithms,<span class="_ _4"> </span>data<span class="_ _4"> </span>structures,<span class="_ _4"> </span>AI,<span class="_ _4"> </span>databases,<span class="_ _4"> </span>parallel<span class="_ _4"> </span>computing,<span class="_ _4"> </span>project</div><div class="t m0 x3 h5 y7 ff1 fs3 fc0 sc0 ls0 ws0">management,<span class="_ _4"> </span>UI/UX<span class="_ _4"> </span>design,<span class="_ _4"> </span>web<span class="_ _4"> </span>development,<span class="_ _4"> </span>machine<span class="_ _4"> </span>architecture,<span class="_ _4"> </span>and<span class="_ _4"> </span>data<span class="_ _4"> </span>analysis.</div><div class="t m0 x3 h4 y8 ff1 fs2 fc0 sc0 ls0 ws0">Experience</div><div class="t m0 x3 h3 y9 ff2 fs1 fc0 sc0 ls0 ws0">Administrative<span class="_ _2"> </span>Assistant<span class="_ _5"> </span><span class="ff1">May<span class="_ _2"> </span>2022<span class="_ _2"> </span>-<span class="_ _2"> </span>Present</span></div><div class="t m0 x3 h3 ya ff1 fs1 fc0 sc0 ls0 ws0">Four<span class="_ _2"> </span>Point<span class="_ _2"> </span>Electric<span class="_ _2"> </span>Inc.<span class="_ _1"> </span>-<span class="_ _1"> </span>Lake<span class="_ _2"> </span>Country<span class="_ _2"> </span>BC,<span class="_ _2"> </span>Canada</div><div class="t m0 x4 h6 yb ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Wrote<span class="_ _4"> </span>Python<span class="_ _2"> </span>scripts<span class="_ _4"> </span>for<span class="_ _2"> </span>data<span class="_ _4"> </span>processing<span class="_ _2"> </span>and<span class="_ _4"> </span>used<span class="_ _2"> </span>Excel<span class="_ _4"> </span>and<span class="_ _2"> </span>Power<span class="_ _4"> </span>BI<span class="_ _2"> </span>to<span class="_ _4"> </span>develop<span class="_ _2"> </span>reports.</span></div><div class="t m0 x4 h6 yc ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Developed<span class="_ _7"> </span>an<span class="_ _7"> </span>administrative<span class="_ _7"> </span>web<span class="_ _7"> </span>application<span class="_ _7"> </span>with<span class="_ _7"> </span>features<span class="_ _7"> </span>for<span class="_ _7"> </span>invoice<span class="_ _7"> </span>and<span class="_ _7"> </span>human<span class="_ _7"> </span>resources</span></div><div class="t m0 x5 h7 yd ff1 fs4 fc0 sc0 ls0 ws0">management<span class="_ _7"> </span>using<span class="_ _7"> </span>low<span class="_ _7"> </span>code<span class="_ _7"> </span>tools<span class="_ _7"> </span>as<span class="_ _7"> </span>directed<span class="_ _7"> </span>by<span class="_ _7"> </span>management.</div><div class="t m0 x4 h6 ye ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Automated<span class="_ _7"> </span>accounts<span class="_ _7"> </span>receivable<span class="_ _7"> </span>emails<span class="_ _7"> </span>with<span class="_ _7"> </span>Microsoft<span class="_ _7"> </span>Power<span class="_ _7"> </span>Automate</span></div><div class="t m0 x4 h6 yf ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Managed<span class="_ _7"> </span>and<span class="_ _7"> </span>processed<span class="_ _7"> </span>bi-weekly<span class="_ _7"> </span>payroll<span class="_ _7"> </span>for<span class="_ _7"> </span>a<span class="_ _7"> </span>company<span class="_ _7"> </span>of<span class="_ _7"> </span>40+<span class="_ _7"> </span>employees.</span></div><div class="t m0 x3 h3 y10 ff2 fs1 fc0 sc0 ls0 ws0">Capstone<span class="_ _2"> </span>-<span class="_ _2"> </span>Full<span class="_ _2"> </span>Stack<span class="_ _2"> </span>Development<span class="_ _8"> </span><span class="ff1">Aug<span class="_ _2"> </span>2022<span class="_ _2"> </span>-<span class="_ _2"> </span>May<span class="_ _2"> </span>2023</span></div><div class="t m0 x3 h3 y11 ff1 fs1 fc0 sc0 ls0 ws0">Rotary<span class="_ _2"> </span>Club<span class="_ _2"> </span>of<span class="_ _2"> </span>Kelowna<span class="_ _2"> </span>Ogopogo<span class="_ _2"> </span>-<span class="_ _2"> </span>Kelowna<span class="_ _2"> </span>BC,<span class="_ _2"> </span>Canada</div><div class="t m0 x4 h6 y12 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Followed<span class="_ _7"> </span>agile<span class="_ _7"> </span>methodology<span class="_ _7"> </span>to<span class="_ _7"> </span>develop<span class="_ _7"> </span>order<span class="_ _7"> </span>taking<span class="_ _7"> </span>web<span class="_ _7"> </span>application<span class="_ _7"> </span>to<span class="_ _7"> </span>client<span class="_ _7"> </span>specifications.</span></div><div class="t m0 x4 h6 y13 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Used<span class="_ _7"> </span>UI/UX<span class="_ _7"> </span>design<span class="_ _7"> </span>principles<span class="_ _7"> </span>to<span class="_ _7"> </span>develop<span class="_ _7"> </span>a<span class="_ _7"> </span>streamlined,<span class="_ _7"> </span>simple,<span class="_ _7"> </span>order<span class="_ _7"> </span>taking<span class="_ _7"> </span>workflow<span class="_ _9"></span>.</span></div><div class="t m0 x4 h6 y14 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Created<span class="_ _7"> </span>administrator<span class="_ _7"> </span>tools<span class="_ _7"> </span>for<span class="_ _7"> </span>managing<span class="_ _7"> </span>orders,<span class="_ _7"> </span>locations,<span class="_ _7"> </span>and<span class="_ _7"> </span>permissions.</span></div><div class="t m0 x4 h6 y15 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Integrated<span class="_ _7"> </span>API’s<span class="_ _4"> </span>to<span class="_ _7"> </span>handle<span class="_ _7"> </span>text/email<span class="_ _7"> </span>confirmation<span class="_ _7"> </span>and<span class="_ _7"> </span>credit<span class="_ _7"> </span>card<span class="_ _7"> </span>processing.</span></div><div class="t m0 x4 h6 y16 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Gained<span class="_ _7"> </span>experience<span class="_ _7"> </span>with<span class="_ _7"> </span>React,<span class="_ _7"> </span>Node,<span class="_ _7"> </span>Express,<span class="_ _7"> </span>MongoDB</span></div><div class="t m0 x3 h4 y17 ff1 fs2 fc0 sc0 ls0 ws0">Personal<span class="_ _a"> </span>and<span class="_ _a"> </span>Academic<span class="_ _a"> </span>Projects</div><div class="t m0 x3 h3 y18 ff2 fs1 fc0 sc0 ls0 ws0">Game<span class="_ _2"> </span>of<span class="_ _2"> </span>the<span class="_ _2"> </span>Amazons<span class="_ _2"> </span>-<span class="_ _2"> </span>Game<span class="_ _2"> </span>playing<span class="_ _2"> </span>client<span class="_ _b"> </span><span class="ff1">Jan<span class="_ _2"> </span>2021<span class="_ _2"> </span>-<span class="_ _2"> </span>May<span class="_ _2"> </span>2021</span></div><div class="t m0 x3 h3 y19 ff1 fs1 fc0 sc0 ls0 ws0">University<span class="_ _2"> </span>of<span class="_ _2"> </span>British<span class="_ _2"> </span>Columbia</div><div class="t m0 x4 h6 y1a ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Developed<span class="_ _7"> </span>Java<span class="_ _7"> </span>program<span class="_ _7"> </span>to<span class="_ _7"> </span>play<span class="_ _7"> </span>the<span class="_ _7"> </span>game<span class="_ _7"> </span>of<span class="_ _7"> </span>the<span class="_ _7"> </span>amazons<span class="_ _7"> </span>against<span class="_ _7"> </span>other<span class="_ _7"> </span>programs<span class="_ _7"> </span>or<span class="_ _7"> </span>players</span></div><div class="t m0 x4 h6 y1b ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Used<span class="_ _7"> </span>a<span class="_ _7"> </span>combination<span class="_ _7"> </span>of<span class="_ _7"> </span>state-based<span class="_ _7"> </span>search<span class="_ _7"> </span>and<span class="_ _7"> </span>Heuristic<span class="_ _7"> </span>functions<span class="_ _7"> </span>to<span class="_ _7"> </span>pick<span class="_ _7"> </span>competitive<span class="_ _7"> </span>moves</span></div><div class="t m0 x4 h6 y1c ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Implemented<span class="_ _7"> </span>move<span class="_ _7"> </span>search<span class="_ _7"> </span>techniques<span class="_ _7"> </span>like<span class="_ _7"> </span>Monte-Carlo<span class="_ _7"> </span>and<span class="_ _7"> </span>MiniMax</span></div><div class="t m0 x3 h3 y1d ff2 fs1 fc0 sc0 ls0 ws0">Chatbot<span class="_ _c"> </span><span class="ff1">Jan<span class="_ _2"> </span>2022<span class="_ _2"> </span>-<span class="_ _2"> </span>May<span class="_ _2"> </span>2022</span></div><div class="t m0 x3 h3 y1e ff1 fs1 fc0 sc0 ls0 ws0">University<span class="_ _2"> </span>of<span class="_ _2"> </span>British<span class="_ _2"> </span>Columbia</div><div class="t m0 x4 h6 y1f ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Developed<span class="_ _7"> </span>a<span class="_ _7"> </span>friendly<span class="_ _7"> </span>chatbot<span class="_ _7"> </span>that<span class="_ _7"> </span>would<span class="_ _7"> </span>respond<span class="_ _7"> </span>to<span class="_ _7"> </span>user<span class="_ _7"> </span>input<span class="_ _7"> </span>with<span class="_ _7"> </span>Java</span></div><div class="t m0 x4 h6 y20 ff3 fs4 fc0 sc0 ls0 ws0">➢<span class="_ _6"> </span><span class="ff1">Used<span class="_ _7"> </span>Discords<span class="_ _7"> </span>API<span class="_ _7"> </span>to<span class="_ _7"> </span>connect<span class="_ _7"> </span>chatbot<span class="_ _7"> </span>to<span class="_ _7"> </span>discord<span class="_ _7"> </span>server</span></div><div class="t m0 x4 h8 y21 ff3 fs1 fc0 sc0 ls0 ws0">➢<span class="_ _d"> </span><span class="ff1 fs4">Included<span class="_ _7"> </span>API’s<span class="_ _4"> </span>to<span class="_ _7"> </span>allow<span class="_ _7"> </span>bot<span class="_ _7"> </span>to<span class="_ _7"> </span>give<span class="_ _7"> </span>information<span class="_ _7"> </span>about<span class="_ _7"> </span>weather<span class="_ _9"></span>,<span class="_ _7"> </span>stocks,<span class="_ _7"> </span>and<span class="_ _7"> </span>tweets.</span></div><div class="t m0 x3 h4 y22 ff1 fs2 fc0 sc0 ls0 ws0">Skills</div><div class="t m0 x3 h7 y23 ff1 fs4 fc0 sc0 ls0 ws0">Languages:<span class="_ _e"> </span>Java,<span class="_ _7"> </span>Javascript,<span class="_ _7"> </span>Python,<span class="_ _7"> </span>C,<span class="_ _7"> </span>R,<span class="_ _7"> </span>HTML,<span class="_ _7"> </span>CSS</div><div class="t m0 x3 h7 y24 ff1 fs4 fc0 sc0 ls0 ws0">Frameworks:<span class="_ _f"> </span>React,<span class="_ _7"> </span>Express.JS,<span class="_ _7"> </span>Node.JS</div><div class="t m0 x3 h7 y25 ff1 fs4 fc0 sc0 ls0 ws0">T<span class="_ _10"></span>echnologies:<span class="_ _11"> </span>Git,<span class="_ _7"> </span>MongoDB,<span class="_ _7"> </span>SQL,<span class="_ _7"> </span>Cuda,<span class="_ _7"> </span>REST<span class="_ _7"> </span>APIs</div><div class="t m0 x3 h7 y26 ff1 fs4 fc0 sc0 ls0 ws0">Other:<span class="_ _12"> </span>MS<span class="_ _7"> </span>Power<span class="_ _7"> </span>Suite,<span class="_ _7"> </span>MS<span class="_ _7"> </span>Office,<span class="_ _4"> </span>T<span class="_ _10"></span>ableau</div><a class="l" href="mailto:zprenovost@gmail.com"><div class="d m1" style="border-style:none;position:absolute;left:238.916061px;bottom:1025.322150px;width:115.015416px;height:12.648920px;background-color:rgba(255,255,255,0.000001);"></div></a><a class="l" href="https://github.com/zachpren0"><div class="d m1" style="border-style:none;position:absolute;left:600.257400px;bottom:1025.322150px;width:52.551060px;height:12.648920px;background-color:rgba(255,255,255,0.000001);"></div></a></div><div class="pi" data-data='{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+<img alt="" src="pdf2htmlEX-64x64.png"/>
+</div>
+</body>
+</html>
