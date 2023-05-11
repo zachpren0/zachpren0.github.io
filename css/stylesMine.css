@@ -85,6 +85,17 @@
     position: relative;
   }
 
+  #avatar-section{
+    padding: auto;
+  }
+  #avatar{
+    margin: auto;
+    width: 8rem;
+    height:8rem;
+
+  }
+
+
 
   
 
