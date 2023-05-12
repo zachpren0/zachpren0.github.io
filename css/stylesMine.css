@@ -53,12 +53,14 @@
 
   .section {
     margin-bottom: 40px;
+    text-align: center;
   }
   
   .section-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    
   }
   
   .project {
@@ -85,15 +87,22 @@
     position: relative;
   }
 
-  #avatar-section{
-    padding: auto;
+  #img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #avatar{
-    margin: auto;
-    width: 8rem;
-    height:8rem;
-
+  
+  #avatar {
+    max-width: 8rem;
+    max-height: 8rem;
   }
+  
+  
+  
+  
+  
+  
 
 
 
@@ -115,5 +124,13 @@
     .navbar-brand {
       font-size: 20px;
     }
+  }
+
+
+  #col1{
+    background-color: aqua;
+  }
+  #col2{
+    background-color: red;
   }
   
