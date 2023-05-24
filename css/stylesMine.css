@@ -103,17 +103,6 @@
 
 
   
-  @media (max-width: 600px) {
-    .container {
-      padding: 0 10px;
-    }
-    
-    .navbar-links {
-      display: none;
-    }
-    
-    .navbar-brand {
-      font-size: 20px;
-    }
-  }
+  
+  
   
