@@ -8,6 +8,12 @@
     padding: 0;
     font-family: Arial, sans-serif;
     
+    
+  }
+
+  #footer{
+    background-image: url(../assets/LakeTapps.jpeg);
+    height: 500px;
   }
   
   header {
@@ -93,6 +99,12 @@
     width: 8rem;
     height:8rem;
 
+  }
+
+  #lake-tapps{
+    margin: auto;
+    width: 10rem;
+    
   }
 
 
