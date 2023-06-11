@@ -107,6 +107,17 @@
     
   }
 
+  .custom-list {
+    /* Add custom styles for the list */
+    margin-top: 20px; /* Example spacing */
+    margin-bottom: 20px; /* Example spacing */
+  }
+  
+  .custom-list-item {
+    /* Add custom styles for the list items */
+    margin-bottom: 10px; /* Example spacing between list items */
+  }
+
 
 
   
