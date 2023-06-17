@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Zach Prenovost</title>
+        <link rel="stylesheet" href="css/stylesMine.css">
+        <link rel="stylesheet" href="css/firewood.css">
+    </head>
+    <body>
+        <!--navbar with link to index.html-->
+        <header>
+            <div class="container navbar">
+              <div class="navbar-brand"><a href="index.html" class="link-unstyled"> Zach Prenovost </a></div>
+              <div class="navbar-links">
+                <ul>
+                  <li><a href="Zachery Prenovost Resume.pdf">Resume</a></li>
+                  <li><a href="https://www.linkedin.com/in/zacheryprenovost/"><img class="navLogo" id="linkedin" src="assets/LI-Logo.png" /></a></li>
+                  <li><a href="https://github.com/zachpren0"><img class="navLogo" src="assets/github-mark-white.svg" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <div class="container">
+
+
+
+            <!--Page title-->
+            
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Firewood Purchasing Portal</h1>
+                    <p class="lead mb-0">A React Web application for placing and managing orders</p>
+                    <p class="project-description"><a href="https://github.com/zachpren0/Firewood-Purchasing-Portal/tree/main">Project Repository</a></p>
+                </div>
+                <div class="row text-center">
+                  <div class="col">
+                    <p> <a class="btn btn-primary" data-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="false" aria-controls="collapseAbout">
+                      about
+                    </a> </p>
+                  </div>
+                  <div class="col">
+                    <p> <a class="btn btn-primary" data-toggle="collapse" href="#collapseAdmin" role="button" aria-expanded="false" aria-controls="collapseAdmin">
+                      administrator
+                    </a> </p>
+                  </div>
+                  <div class="col">
+                    <p> <a class="btn btn-primary" data-toggle="collapse" href="#collapseCustomer" role="button" aria-expanded="false" aria-controls="collapseCustomer">
+                      customer
+                    </a> </p>
+                  </div>
+
+                  <!--Collapsible rows -->
+                  <div class="row">
+                  <div class="collapse" id="collapseAbout">
+                    <div class="card card-body">
+                      <p>The website is designed to allow customers to make purchases of firewood
+                        from the Rotary Club of Kelowna Ogopogo charity firewood selling operation, it also includes an administrator portal for management
+                        of orders, inventory, selling locations, other administrator accounts, and product pricing.
+                        </p>
+            
+                        <p>The MERN stack was used to develop this website, with the database as
+                          MongoDB, the backend server language as Node.js, and support from the Express library. The
+                          frontend language framework is React.js.</p>
+                        <p>The three major API’s used in the development of this project include Square(credit card
+                          payments), Twilio (automated text-messaging), and SendGrid (automated emailing services).</p>
+                        <p> This website was built by a group of 4 UBC students: </p>
+                        <p> <a href="https://github.com/Zachpren0"> Myself </a> </p>
+                        <p> <a href="https://github.com/SpeiserK"> Karlen Speiser </a> </p>
+                        <p> <a href="https://github.com/amurph24"> Aiden Murphy</a></p>
+                        <p> <a href="https://github.com/camwlsn"> Cam Wilson </a></p>
+                      <i> this project summary is made with persmission from Rotary Club of Kelowna Ogopogo and the information shown is not real customer informaion </i>
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseAdmin">
+                    <div class="card card-body">
+                      <!-- admin tools content -->
+                      <p class="lead mb-0"> Admin Portal </p>
+                      <p> by selecting admin portal on the navbar we reach our admin sign in page:</p>
+                      <figure> <!--admin login page image-->
+                        <img class="firewood-image" src="assets/Firewood/admin/admin_login.png" />
+                      </figure>
+                      <p>two types of administrators exist, regular and super admins. This is pre-determined before sign in and determined by credentials. here is what the portal looks like for a regular admin of the location 'rutland': </p>
+                      <p>these regular admins only have acess to location specific orders and inventory management</p>
+                      <figure> <!--rutland admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/rutland_admin.png" />
+                      </figure>
+                      <p> logging in as super admin gives the option to view this page for all locations as well as a dropdown to select individual locations</p>
+                      <figure> <!--all super admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/super_admin_all.png" />
+                      </figure>
+                      <figure> <!--super admin select-->
+                        <img class="firewood-image" src="assets/Firewood/admin/location_select_live_orders.png" />
+                      </figure>
+                      <p> on this page we can see orders that are ready for pickup:</p>
+                      <figure> <!--need pickup-->
+                        <img class="firewood-image" src="assets/Firewood/admin/live_orders_need_pickup.png" />
+                      </figure>
+                      <p> and we can see orders that need approval (cash and e-transfer orders) </p>
+                      <figure> <!--need approval-->
+                        <img class="firewood-image" src="assets/Firewood/admin/live_orders_need_approval.png" />
+                      </figure>
+                      <p> Super admins have access to a page with search tools and filter tools on all orders in the database: </p>
+                      <figure> <!--order history-->
+                        <img class="firewood-image" src="assets/Firewood/admin/Order_History.png" />
+                      </figure>
+                      <p> Super admins can also create and manage new admins, manage all locations , and even change the price of the firewood </p>
+                      <figure> <!--rutland admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/create_new_admin_form.png" />
+                      </figure>
+                      <figure> <!--rutland admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/manage_admin.png" />
+                      </figure>
+                      <figure> <!--rutland admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/location_management.png" />
+                      </figure>
+                      <figure> <!--rutland admin-->
+                        <img class="firewood-image" src="assets/Firewood/admin/price_change.png" />
+                      </figure>
+                      
+
+
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseCustomer">
+                    <div class="card card-body">
+                      <!-- customer tools content-->
+                      <p class="lead mb-0">Customer Facing Content</p>
+                      <p> When customers open the web application they are greeted with the welcome page, which gives a description of the website and a large order button:</p>
+                      <figure> <!--start page image-->
+                        <img class="firewood-image" src="assets/Firewood/customer/start_page.png" />
+                      </figure>
+                      <p> By selecting the order button customers are taken to a form that allows them to fill out their information: </p>
+                      <figure> <!--order form image-->
+                        <img class="firewood-image" src="assets/Firewood/customer/order_form_page.png" />
+                      </figure>
+                      <p> customers can fill out their information and can also select a pickup location from the list of locations available in the database:</p>
+                      <figure> <!--order - select image-->
+                        <img class="firewood-image" src="assets/Firewood/customer/order_select_location.png" />
+                      </figure>
+                      <p> Customers will then be given an order summary and options for paying including credit card (integrated with Square API) cash and e-transfer</p>
+                      <figure> <!--order - summary image-->
+                        <img class="firewood-image" src="assets/Firewood/customer/order_summary_page.png" />
+                      </figure>
+                      <p> After orders have been placed customers will recieve a text and email confirmation with their order information, customers can also view the view orders page by using the navbar, there they can enter a phone number and see associated orders and their status:</p>
+                      <figure> <!--order - view image-->
+                        <img class="firewood-image" src="assets/Firewood/customer/view_orders_page.png" />
+                      </figure>
+                    </div>
+                  </div>
+                
+                </div>
+
+
+
+                </div>
+
+            </div>
+
+        <!--my js file-->
+        <script src="js/scripts.js"></script>
+
+        <!--Bootstrap JS Files-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

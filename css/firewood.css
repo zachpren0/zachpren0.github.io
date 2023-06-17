@@ -1,0 +1,13 @@
+.btn:not(.active) {
+    background-color: #ffffff;
+    color: #6c757d;
+  }
+
+  .btn.active {
+    background-color: #007bff;
+  }
+
+  .firewood-image {
+    width:80%;
+    height:80%;
+  }
