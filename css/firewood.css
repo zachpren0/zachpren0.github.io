@@ -11,3 +11,22 @@
     width:80%;
     height:80%;
   }
+
+  .firewood-image-short {
+    width:80%;
+    height:100%;
+  }
+
+
+#live-order-location-select{
+  width: 20%;
+  height: 20%;
+}
+
+#live_orders_need_pickup{
+  height: 100%;
+}
+
+#live_orders_need_approval{
+  height: 100%;
+}
