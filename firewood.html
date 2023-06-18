@@ -39,7 +39,8 @@
                     <h1 class="fw-bolder">Firewood Purchasing Portal</h1>
                     <p class="lead mb-0">A React Web application for placing and managing orders</p>
                     <p class="project-description"><a href="https://github.com/zachpren0/Firewood-Purchasing-Portal/tree/main">Project Repository</a></p>
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2_GIgA-XRMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
                 <div class="row text-center">
                   <div class="col">
                     <p> <a class="btn btn-primary" data-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="false" aria-controls="collapseAbout">
@@ -87,31 +88,32 @@
                       <figure> <!--admin login page image-->
                         <img class="firewood-image" src="assets/Firewood/admin/admin_login.png" />
                       </figure>
-                      <p>two types of administrators exist, <b>regular</b> and <b>super</b> admins. This is determined by sign in credentials. </br> Here is what the portal looks like for a regular admin of the location 'rutland': </p>
-                      <p>these regular admins only have acess to location specific orders and inventory management</p>
+                      <p>Two types of administrators exist, <b>regular</b> and <b>super</b> admins. This is determined by sign in credentials.</p>
+                      <p>Regular admins have acess to location specific orders and inventory management. they can approve and deny orders based on their specific location assigned <br> </br>  Here is what the portal looks like for a regular admin of the location 'rutland':</p>
                       <figure> <!--rutland admin-->
                         <img class="firewood-image" src="assets/Firewood/admin/rutland_admin.png" />
                       </figure>
-                      <p> logging in as super admin gives the option to view this page for all locations as well as a dropdown to select individual locations</p>
+                      <p> admins can see orders that are ready for pickup, heres what our UBC admin would see:</p>
+                      <figure> <!--need pickup-->
+                        <img class="firewood-image" id="live_orders_need_pickup" src="assets/Firewood/admin/live_orders_need_pickup.png" />
+                      </figure>
+                      <p> they can also see orders that need approval (cash and e-transfer orders), when an order is approved a text message is sent to the customer using the <b>Twilio</b> Api </p>
+                      <figure> <!--need approval-->
+                        <img class="firewood-image" id="live_orders_need_pickup" src="assets/Firewood/admin/live_orders_need_approval.png" />
+                      </figure>
+                      <p> logging in as <b>super admin</b> gives the option to view this page for all locations as well as a dropdown to select individual locations</p>
                       <figure> <!--all super admin-->
                         <img class="firewood-image" src="assets/Firewood/admin/super_admin_all.png" />
                       </figure>
                       <figure> <!--super admin select-->
                         <img class="firewood-image" id="live-order-location-select" src="assets/Firewood/admin/location_select_live_orders.png" />
                       </figure>
-                      <p> on this page we can see orders that are ready for pickup:</p>
-                      <figure> <!--need pickup-->
-                        <img class="firewood-image" id="live_orders_need_pickup" src="assets/Firewood/admin/live_orders_need_pickup.png" />
-                      </figure>
-                      <p> and we can see orders that need approval (cash and e-transfer orders): </p>
-                      <figure> <!--need approval-->
-                        <img class="firewood-image" id="live_orders_need_pickup" src="assets/Firewood/admin/live_orders_need_approval.png" />
-                      </figure>
+  
                       <p> Super admins have access to a page with search tools and filter tools on all orders in the database: </p>
                       <figure> <!--order history-->
                         <img class="firewood-image" src="assets/Firewood/admin/Order_History.png" />
                       </figure>
-                      <p> Other features super admins also have access to is <b>admin accounts management</b>, managing selling locations , and even changing the price of the firewood </p>
+                      <p> Other features super admins also have access to is <b>admin accounts management, managing selling locations , and even changing the price of the firewood </b></p>
                       
                       
                       
@@ -149,9 +151,9 @@
                 </div>
 
 
-
+                
                 </div>
-
+                
             </div>
 
         <!--my js file-->

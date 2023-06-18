@@ -30,3 +30,7 @@
 #live_orders_need_approval{
   height: 100%;
 }
+
+.card-body{
+  font-size: larger;
+}
