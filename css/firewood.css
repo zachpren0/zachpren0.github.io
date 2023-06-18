@@ -34,3 +34,12 @@
 .card-body{
   font-size: larger;
 }
+
+.surf-image{
+  width: 70%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}

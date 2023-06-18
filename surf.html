@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Zach Prenovost</title>
+        <link rel="stylesheet" href="css/stylesMine.css">
+        <link rel="stylesheet" href="css/firewood.css">
+    </head>
+    <body>
+        <!--navbar with link to index.html-->
+        <header>
+            <div class="container navbar">
+              <div class="navbar-brand"><a href="index.html" class="link-unstyled"> Zach Prenovost </a></div>
+              <div class="navbar-links">
+                <ul>
+                  <li><a href="Zachery Prenovost Resume.pdf">Resume</a></li>
+                  <li><a href="https://www.linkedin.com/in/zacheryprenovost/"><img class="navLogo" id="linkedin" src="assets/LI-Logo.png" /></a></li>
+                  <li><a href="https://github.com/zachpren0"><img class="navLogo" src="assets/github-mark-white.svg" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <div class="container">
+
+
+
+            <!--Page title-->
+            
+                <div class="text-center my-5">
+                    <h1>COSC 360 project - 'Surf - forum'</h1>
+        
+    <h3>Created by Zach Prenovost and Aidan Murphy </h3>
+    
+    
+    <h4>Website: <a href="https://cosc360.ok.ubc.ca/amurph/project-amurph24/home.php">https://cosc360.ok.ubc.ca/amurph/project-amurph24/home.php</a></h4>
+    <h4>Project Repository: <a href="https://github.com/COSC360/project-amurph24">https://github.com/COSC360/project-amurph24</a></h4>
+    
+    <br></br>
+    <h2>Walkthrough</h2>
+    <p>Users can access the site at <a href="https://cosc360.ok.ubc.ca/amurph/project-amurph24/home.php">https://cosc360.ok.ubc.ca/amurph/project-amurph24/home.php</a>. This link will direct the user to the home page which includes a welcome message for all users and links to categories the posts are under.</p>
+    <figure>
+        <img class="surf-image" src="assets/Surf/home.png" />
+        <figcaption> Fig 1. Home.php </figcaption>
+    </figure>
+    
+    
+    <p>Guest users can browse the features available to them by doing the following:</p>
+    <ul>
+        <li>Select a category and browse the available posts associated with that category</li>
+        <li>Select a post to view</li>
+        <li>Browse comments under each post</li>
+        <li>View user profiles and associated information</li>
+    </ul>
+    
+    <p>In order to access more site functionality, users will need to sign up for the site. They can do this by clicking the signup button on the site's header. Doing so will take the user to our signup form page.</p>
+    <figure>
+        <img class="surf-image" src="assets/Surf/signup.png" />
+        <figcaption> Fig 2. User Signup Form </figcaption>
+    </figure>
+    
+    
+    <p>Users can sign up for the site by filling in the required fields and pressing submit. If the tester wishes, they can try to enter incorrect information like an email that is formatted incorrectly or a wrong repeated password, and the form's error handling messages will instruct the user what they did wrong.</p>
+    
+    <p>Once the user successfully registers for the site, they will be redirected to the login screen where they can enter the credentials they just used for signup to login as a user of the site. This page is also available in the site header from all pages when a user is not logged in.</p>
+    
+    <p>Once logged in, the user will be redirected to the home page.</p>
+    
+    <p>To make a post, logged in users can navigate to the category they wish to post under and select the create post button which will now be visible at the top of the category page they are currently viewing. Go ahead and give it a try!</p>
+    <figure>
+        <img class="surf-image" src="assets/Surf/new_post.png" />
+        <figcaption> Fig 3. Create Post Form </figcaption>
+    </figure>
+    
+    <p>Users can make comments as well by navigating to a post and creating a comment under the comment button. Create a comment under the post you created.</p>
+    
+    <p>Users can edit their posts and comments inside a post, but only if they were the user that created the specific post or comment. If this is the case, there will be two buttons that pop up: Edit and Delete. Go ahead and edit the comment you just made, then delete it. After that, delete the post you made as well.</p>
+    
+    <p>Users can access their profile via the profile button on the site header. Click this to view/edit their profile.</p>
+    <figure>
+        <img class="surf-image" src="assets/Surf/user_profile.png" />
+        <figcaption> Fig 4. Edit Profile Page </figcaption>
+    </figure>
+    
+    
+    <p>Users can change their profile picture on this page, change their password, edit their profile information, and can also delete their profile.</p>
+    
+    <p>There are designated accounts that are set up as administrator accounts. To sign in as an administrator, you have to know the administrator credentials:</p>
+    <ul>
+        <li>Username: admin</li>
+        <li>Password: 123</li>
+    </ul>
+    
+    <p>Administrators can edit and/or delete all posts and comments. Additionally, when viewing profiles, they can enable and disable the user. Test out some of the added features that an admin wields:</p>
+    <ul>
+        <li>Click on the "Disable" button when viewing a user to disable their account.</li>
+        <li>Click on the "Edit" or "Delete" button inside of a post to edit or remove it.</li>
+        <li>Click on the "Edit" or "Delete" button next to a comment to edit or remove it.</li>
+    </ul>
+    
+    <h2>Developer Implementation</h2>
+    
+    <h3>General file management</h3>
+    <p>Our website uses HTML, JavaScript, CSS, and PHP. The JavaScript is used exclusively for account creation/authentication in reaction to HTML document events. The HTML is used as scaffolding for the website, and CSS is implemented through Bootstrap and some custom CSS. Our PHP files can be separated into two categories: includes and non-includes.</p>
+    <p>Includes do not have any on-screen features. They are pure code and are mainly used to run SQL queries to the database and change session variables; they are an intermediate between non-includes. Some examples are: functions.inc.php, login.inc.php.</p>
+    <p>Non-includes are almost entirely HTML files, with some use of PHP for small queries or retrieving session variables. They are visible and accessible to users. Some examples are: home.php, account.php.</p>
+    
+    <h3>Security</h3>
+    <p>Security implementation is mostly done with PHP, both client and server-side. The client-side security for creating and logging into an account uses JavaScript to check for empty fields. However, all other error checking, both in the account authentication and everywhere else on the website, uses PHP, which is mostly accomplished through the use of the strcmp PHP function and boolean expressions. Compared objects are retrieved via query strings and form submissions occasionally. However, the majority of all variables that are used for security purposes are stored in the session state. As some of these variables are used in queries, we also use the mysqli library to check for illegal characters in certain user entries to prevent low-level SQL injection attacks.</p>
+    <p>Another security measure included in this website is a wait time on form submissions to prevent mass attacks designed to crash the database and website hosting server.</p>
+    
+    <h3>Database structure</h3>
+    <p>The discussion threads in the database are stored as categories, posts, and comments, with both the post and comment tables containing a foreign key that links to the user who created it. Additionally, comments have a foreign key that links to the post it belongs to. The post objects have a category_id foreign key that links them to the category table, which classifies the posts by category.</p>
+    <p>Registered users, regardless of their access level, have their profile information stored as a user object. This object includes two fields, is_admin and is_enabled, which differentiate between admins and users whose accounts have been disabled by admins. Figure 1 illustrates the relationships between all of the database objects.</p>
+    <figure>
+        <img class="surf-image" src="assets/Surf/er_diagram.png" />
+        <figcaption> Fig 5. Entity Relationship Diagram for Surf-Forum </figcaption>
+    </figure>
+    
+    
+    <h3>Testing</h3>
+    <p>Testing was done manually by checking both the database values and error handling messages on the site when both correct and incorrect values were submitted using forms on the site. For example, when testing the signup features, the developers would try to input incorrect values to ensure that the error handling messages worked properly and would check the database so that it would not input improper values. We used this approach as it was a simple website with not too many features, and it was easier to test each feature manually at the time of implementation than it was to build test cases.</p>
+    
+    <h3>Version Control</h3>
+    <p>We used a GitHub repository for version control, which we made branches off of and created pull requests that required both users to review new code before it was updated to our main branch that matches what we host.</p>
+    
+    <h3>General Usability and Limitations</h3>
+    <p>Maintaining a simple, user-friendly website can be challenging. However, by relying on Bootstrap as our primary source of CSS, we can create more complex features without worrying about whether users will understand the function of a particular component.</p>
+    <p>Implementing a breadcrumb bar through session variables is a feature that is not specific to Bootstrap, however, it is made much easier with the predesigned framework.</p>
+    <p>Using PHP for most of our security implementation requires strong error checking/prevention, as bad inputs in PHP can cause website execution to cease entirely. As such, the website always checks that user inputs exist and that they do not contain any forbidden characters.</p>
+    <p>When there is an error caused by user input or other factors, the website will navigate back to the previous page using a query string to display an error message. Being unable to progress is extremely frustrating and is made worse when the cause is unknown. We have tried to minimize this as much as possible.</p>
+    <p>The structure of the website does create some boundaries with the following limitations at the forefront:</p>
+    <ol>
+        <li>Spam and inappropriate content: We do not have any censorship for user inputs. Spam and inappropriate content can only be removed manually by admins.</li>
+        <li>Malicious posts: We are inserting the posts into the website directly as HTML. Any person with experience using HTML may be able to exploit this.</li>
+        <li>Limited multimedia support: Our message board only supports text and other HTML elements. Users cannot insert different types of media without being proficient in HTML.</li>
+        <li>Limited mobile support: Our message board is designed for a laptop or desktop computer. The two-column layout does not translate well on mobile devices and would require a major rework to correct this.</li>
+        <li>Categories are fixed: Categories cannot be created by admins; they must be manually inserted into the database. A category may become oversaturated with posts before it is split into two or more other categories. Categories cannot have their names changed or deleted outside of manual database management.</li>
+    </ol>
+    
+    <h2>Conclusion</h2>
+    <p>In conclusion, our project 'Surf - forum' is a simple discussion forum website that allows users to create accounts, post threads, comment on threads, and interact with other users. The website has been manually tested, and security measures have been implemented to ensure the protection of user data. While there are some limitations and areas for improvement, we believe that the website fulfills its intended purpose as a platform for users to engage in discussions.</p>
+    <p>Thank you for taking the time to review our project!</p>
+                </div>
+          </div>
+          
+
+        <!--my js file-->
+        <script src="js/scripts.js"></script>
+
+        <!--Bootstrap JS Files-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
