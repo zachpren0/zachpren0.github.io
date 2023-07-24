@@ -21,6 +21,7 @@
     display: flex;
     text-align: center;
     line-height: 20px;
+    margin: 2rem 0 2rem 0;
 }
 
 #head{
@@ -37,4 +38,8 @@
 #headTail{
     background-color: red;
     color: black;
+}
+
+#secret{
+    color:red;
 }

@@ -1,18 +1,4 @@
-// this is my attempt to visualize a ring buffer dynamically. 
-//written 100% by me no chat gippety baby - prolly why it looks sick af
 
-//ring buffer can do couple things. 
-
-//add to head 
-
-//add to tail
-
-//if tail at end of capacity array move to front of capacity array
-
-//vice versa
-
-
-//if tail reaches front resize to new array
 document.addEventListener("DOMContentLoaded", createArray);
 
 let arrayLength = 6;
@@ -123,7 +109,7 @@ sizeDisplay.innerHTML="Size: "+ size;
 
 
 if (tail == arrayLength){
-    tail = 0; //i know im supposed to do modulo here but bear with me 
+    tail = tail % arrayLength; //i know im supposed to do modulo here but bear with me 
 }
 if (tail == head && size>1) {
     
@@ -158,7 +144,7 @@ array[tail] = 1;
 }
 
 function deque() {
-    //return head
+    //remove from head
     head++;
     size--;
 
@@ -199,7 +185,7 @@ function deque() {
     currentHead.innerHTML = null;
 
     if (head == arrayLength){
-        head = 0; //i know im supposed to do modulo here but bear with me 
+        head = head % arrayLength; //i know im supposed to do modulo here but bear with me 
     }
 
     
@@ -251,3 +237,4 @@ function resize() {
     
     createArray();
 }
+
