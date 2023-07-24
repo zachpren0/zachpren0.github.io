@@ -1,0 +1,40 @@
+.ring{
+    color: white ;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+
+    
+}
+
+.active{
+    background-color: red;
+    color: red;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#ring-buffer{
+    display: flex;
+    text-align: center;
+    line-height: 20px;
+}
+
+#head{
+    background-color: red;
+    color: black;
+    
+}
+
+#tail{
+    background-color: red;
+    color: black;
+}
+
+#headTail{
+    background-color: red;
+    color: black;
+}

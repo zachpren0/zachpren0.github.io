@@ -13,6 +13,9 @@
         <title>Zach Prenovost Developer Portfolio</title>
         <link rel="stylesheet" href="css/stylesMine.css">
         <link rel="stylesheet" href="css/firewood.css">
+        <link rel="stylesheet" href="css/ringBuffer.css">
+
+        
     </head>
     <body>
         <!--navbar with link to index.html-->
@@ -29,7 +32,7 @@
             </div>
           </header>
 
-          <div class="container">
+    <div class="container">
 
     <section id="img" class="section" id="avatar-section">
       
@@ -81,8 +84,34 @@
       
 
     </section>
+
+    <div> 
+
+    <h1> Ring Buffer Simulator</h1>
+    <button id="enqueue" onclick="enqueue()" > enqueue </button>
+    <button id="deque" onclick="deque()"> deque </button>
+    <span id="size"> Size: </span>
+    <span id="max"> Max: </span>
+    <span id="secret"> </span>
+    
+
+
+    <div id="ring-buffer"> 
+
+
+      
+    </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/ring-buffer.js"></script> 
+  
+  <!--end of container-->
   </div>
   
-  </body>
-</body>
+
+    
+ </body>
+
+
 </html>
