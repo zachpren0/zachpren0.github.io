@@ -1,0 +1,31 @@
+.maze-row{
+    display: flex; /* or display: grid; */
+    margin: 0;
+}
+
+.maze-cell{
+    background-color: white;
+    border: none;
+}
+.maze-wall{
+    background-color: black;
+    border: 1px solid black;
+}
+.maze-start{
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+.maze-end{
+    background-color: red;
+}
+.path{
+    background-color: goldenrod;
+}
+
+.maze-row > span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+}
