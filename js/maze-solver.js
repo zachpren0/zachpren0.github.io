@@ -3,16 +3,16 @@
 const maze = [
     "xxxxxxxxxxsx",
     "x        x x",
-    "x        x x",
-    "x xxxxxxxx x",
-    "x          x",
-    "xxxxx xxxxxx",
-    "x   x x    x",
     "x          x",
     "x xxxxxxxxxx",
     "x          x",
-    "x          x",
-    "xxxxxxxxxx x",
+    "xxxxx xxxxxx",
+    "x   x x    x",
+    "x     x  x x",
+    "x xxxxxxxx x",
+    "x    x     x",
+    "x      x   x",
+    "xxxxxxxxxxex",
 ];
 
 
@@ -40,6 +40,7 @@ function displayMaze(){
             }
             else if(char == 'e'){
                 cellElement.className ="maze-end";
+                cellElement.innerHTML="E"
             }
             else if (char=="p"){
                 cellElement.className ="path";
@@ -109,7 +110,7 @@ function walk(maze, wall, curr, end, seen, path) {
     // are we at end?
     if (curr.x === end.x && curr.y === end.y) {
         path.push(end);
-        maze[curr.y] = maze[curr.y].substring(0, curr.x) + "p" + maze[curr.y].substring(curr.x + 1);
+        maze[curr.y] = maze[curr.y].substring(0, curr.x) + "e" + maze[curr.y].substring(curr.x + 1);
         displayMaze();
         return true;
     }
@@ -165,5 +166,17 @@ function walk(maze, wall, curr, end, seen, path) {
     return false;
 }
 
+const resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", resetMaze);
+// Function to reset the maze
+function resetMaze() {
+    // Restore the original maze
+    for (let i = 0; i < maze.length; ++i) {
+        maze[i] = maze[i].replace(/p/g, ' ');
+    }
+
+    // Call the displayMaze function again to update the maze display
+    displayMaze();
+}
 
 

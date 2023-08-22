@@ -12,15 +12,17 @@
     border: 1px solid black;
 }
 .maze-start{
-    background-color: green;
+    background-color: grey;
     text-align: center;
     color: white;
 }
 .maze-end{
-    background-color: red;
+    background-color: grey;
+    text-align: center;
+    color: white;
 }
 .path{
-    background-color: goldenrod;
+    background-color: red;
 }
 
 .maze-row > span{
@@ -28,4 +30,7 @@
     width: 20px;
     height: 20px;
     
+}
+#mazeContainer{
+    margin: 1.5rem 0 1.5rem 0;
 }
