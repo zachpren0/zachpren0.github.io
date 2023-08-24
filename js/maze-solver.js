@@ -17,6 +17,8 @@ const maze = [
 
 
 
+
+
 function displayMaze(){
 
     const mazeContainer = document.getElementById("mazeContainer");
