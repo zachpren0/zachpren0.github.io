@@ -16,32 +16,32 @@ const mazeData = [
     "xxxxxxxxxxex",
 ],
 [
-    "xxxxxxxxxxex",
-    "x   x      x",
-    "x          x",
-    "xx xxx  xxxx",
-    "x   x   x  x",
-    "x x x  xxx x",
-    "x   xx   x x",
-    "x x    x   x",
-    "x  x  x x  x",
-    "x    x     x",
-    "x  x       x",
-    "xsxxxxxxxxxx"
+    "xxsxxxxxxxex",
+    "x   x    x x",
+    "x   x  x x x",
+    "xx xxx x x x",
+    "x   x  x x x",
+    "x x x  x x x",
+    "x  xx  x x x",
+    "x xx  xx x x",
+    "x  x  x  x x",
+    "x    xx x  x",
+    "x  x x     x",
+    "xxxxxxxxxxxx"
 ]
 ,
 [
-    "xxxxxxxxxxsx",
+    "xxxxxxxxxxxx",
     "x        x x",
     "x  xxxx    x",
     "xx    x xxxx",
-    "x  x  x    x",
+    "x  x  x    s",
     "xxxxx xxxxxx",
     "x   x x    x",
     "x     x  x x",
-    "x xxxxxxxx x",
-    "x          x",
-    "x    x     x",
+    "xx xxxx xx x",
+    "x  x    x  x",
+    "x    x  x  x",
     "xxxxxxxxxxex"
 ],
 [
@@ -59,18 +59,18 @@ const mazeData = [
     "xsxxxxxxxxxx"
 ],
 [
-    "xxxxxxxxxxsx",
+    "xxxxxxxxxxxx",
     "x          x",
     "x          x",
     "x          x",
-    "x  x    x  x",
+    "x  s    e  x",
     "x          x",
     "x          x",
     "x x      x x",
     "x  xxxxxx  x",
     "x          x",
     "x          x",
-    "xxxexxxxxxxx",
+    "xxxxxxxxxxxx",
 ],
 ];
 
@@ -104,7 +104,7 @@ window.onload = displayMaze();
 
 function displayMaze(){
 
-    if (maze == undefined)
+    if (maze == undefined) //change to setCoords(mazeIdx) below
         ({ maze, start, end } = setCoords(mazeIdx));
     
     const mazeContainer = document.getElementById("mazeContainer");
@@ -156,9 +156,7 @@ function recurse(){
  // base case 
 
  wall = "x";
- //start = { x: 10, y: 0 };
- //end = { x: 10, y: 11 };
-
+ 
  const seen = [];
  const path = [];
 
