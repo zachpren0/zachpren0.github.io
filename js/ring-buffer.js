@@ -64,8 +64,7 @@ function createArray() {
 
         container.appendChild(element);
     }
-    console.log("initial head: "+ head);
-    console.log("initilal tail: "+ tail);
+    
 }
 
 function enqueue() { //fails on end 

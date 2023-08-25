@@ -1,11 +1,12 @@
 
 
-const maze = [
+const mazeData = [
+[
     "xxxxxxxxxxsx",
     "x        x x",
-    "x          x",
-    "x xxxxxxxxxx",
-    "x          x",
+    "x  xxxx    x",
+    "xx    x xxxx",
+    "x  x  x    x",
     "xxxxx xxxxxx",
     "x   x x    x",
     "x     x  x x",
@@ -13,14 +14,99 @@ const maze = [
     "x    x     x",
     "x      x   x",
     "xxxxxxxxxxex",
+],
+[
+    "xxxxxxxxxxex",
+    "x   x      x",
+    "x          x",
+    "xx xxx  xxxx",
+    "x   x   x  x",
+    "x x x  xxx x",
+    "x   xx   x x",
+    "x x    x   x",
+    "x  x  x x  x",
+    "x    x     x",
+    "x  x       x",
+    "xsxxxxxxxxxx"
+]
+,
+[
+    "xxxxxxxxxxsx",
+    "x        x x",
+    "x  xxxx    x",
+    "xx    x xxxx",
+    "x  x  x    x",
+    "xxxxx xxxxxx",
+    "x   x x    x",
+    "x     x  x x",
+    "x xxxxxxxx x",
+    "x          x",
+    "x    x     x",
+    "xxxxxxxxxxex"
+],
+[
+    "xxxxxxxxxxex",
+    "x   x  x   x",
+    "x x   x    x",
+    "xx  xx  xxxx",
+    "x x  x     x",
+    "x x x  x x x",
+    "x   xxxx x x",
+    "x x    x   x",
+    "x  x    x  x",
+    "x  xxx  x  x",
+    "x  x       x",
+    "xsxxxxxxxxxx"
+],
+[
+    "xxxxxxxxxxsx",
+    "x          x",
+    "x          x",
+    "x          x",
+    "x  x    x  x",
+    "x          x",
+    "x          x",
+    "x x      x x",
+    "x  xxxxxx  x",
+    "x          x",
+    "x          x",
+    "xxxexxxxxxxx",
+],
 ];
 
+function setCoords(idx){
+    let start = {};
+    let end = {};
+    
+    //change back to idx
+    const maze = mazeData[idx];
+
+    for (let rowIdx = 0; rowIdx < maze.length; rowIdx++) {
+        const row = maze[rowIdx];
+        for (let charIdx = 0; charIdx < row.length; charIdx++) {
+            const char = row[charIdx];
+            if(char === 's'){
+                start = {x: charIdx, y: rowIdx};
+            } else if(char === 'e'){
+                end = {x: charIdx, y: rowIdx};
+            }
+        }
+    }
 
 
+    return {maze, start, end};
+}
 
+let maze, start, end;
+let mazeIdx = 0;
+
+window.onload = displayMaze();
 
 function displayMaze(){
 
+    if (maze == undefined)
+        ({ maze, start, end } = setCoords(mazeIdx));
+    
     const mazeContainer = document.getElementById("mazeContainer");
     
     mazeContainer.innerHTML = "";
@@ -61,7 +147,8 @@ function displayMaze(){
 
 }
 
-window.onload = displayMaze;
+
+
 
 
 
@@ -69,8 +156,8 @@ function recurse(){
  // base case 
 
  wall = "x";
- start = { x: 10, y: 0 };
- end = { x: 10, y: 11 };
+ //start = { x: 10, y: 0 };
+ //end = { x: 10, y: 11 };
 
  const seen = [];
  const path = [];
@@ -181,4 +268,21 @@ function resetMaze() {
     displayMaze();
 }
 
+const newMazeButton = document.getElementById("newMaze");
+newMazeButton.addEventListener("click", newMaze);
+
+function newMaze(){
+
+    resetMaze();
+
+    let length = mazeData.length;
+    
+    let newIdx = Math.floor(Math.random() * length);
+    while (newIdx === mazeIdx)
+        newIdx = Math.floor(Math.random() * length);
+    mazeIdx = newIdx;
+    console.log(mazeIdx);
+    ({ maze, start, end } = setCoords(mazeIdx));
+    displayMaze();
+}
 
